@@ -14,4 +14,15 @@ export class LoginComponent {
   constructor(private loginService:LoginService){
 
   }
+
+  login(){
+    this.loginService.login(this.usuario, this.password).subscribe(data =>{
+      this.client = data;
+      if (this.client != null){ // usuario válido
+        alert("Usuario autenticado");
+      } else {
+        alert("Usuario no autenticado");
+      }
+    })
+  }
 }
