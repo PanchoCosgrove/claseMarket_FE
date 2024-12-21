@@ -1,3 +1,9 @@
+*********************
+Este es el curso de SpringBoot y Angular de Antonio Martín Sierra. 
+URL: https://www.udemy.com/course/desarrollo-de-una-aplicacion-web-desde-cero/learn/lecture/36600880#overview
+
+
+
 # Marketclient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
