@@ -11,12 +11,11 @@ export class LoginComponent {
   usuario:string;
   password:string;
   client:Cliente;
-  constructor(private loginService:LoginService){
-
-  }
+  constructor(private loginService:LoginService){}
 
   login(){
-    this.loginService.login(this.usuario, this.password).subscribe(data =>{
+    this.loginService.login(this.usuario, this.password).subscribe(
+      data =>{
       this.client = data;
       if (this.client != null){ // usuario válido
         alert("Usuario autenticado");
